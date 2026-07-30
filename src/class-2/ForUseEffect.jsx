@@ -24,7 +24,7 @@ const ForUseEffect = () => {
                 })
             }
             <h3>{count}</h3>
-            <button onClick={() => { setCount(count + 1) }}>click</button>
+            <button onClick={() => setCount(count + 1) }>click</button>
         </div>
     )
 }
