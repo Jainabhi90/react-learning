@@ -10,6 +10,8 @@ import Home from './class-3/Home';
 import Contact from './class-3/Contact';
 ;
 import { Route, Routes } from 'react-router-dom';
+import ProductList from './class-4/ProductList';
+import ProdD from './class-4/ProdD';
 
 const App = () => {
   let[count,setCount] = useState(0);
@@ -31,6 +33,10 @@ const App = () => {
         <Route path='/' element={<Home/>}> </Route>
         <Route path='/about' element={<About/>}> </Route>
         <Route path='/contact' element={<Contact/>}> </Route>
+        <Route path='/prodlist' element={<ProductList/>}> </Route>
+        <Route path='/prodD/:id' element={<ProdD/>}> </Route>
+        <Home/>
+
       </Routes>
     
     </>
