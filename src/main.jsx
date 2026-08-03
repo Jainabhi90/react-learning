@@ -6,10 +6,10 @@ import {BrowserRouter} from 'react-router-dom'
 import Context from './class-4/A.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
-    <Context.Provider value={"hehehehhehehehheheheheheh"}>
+    // <BrowserRouter>
+    // <Context.Provider value={"hehehehhehehehheheheheheh"}>
       <App />
-    </Context.Provider>
+    // </Context.Provider>
     
-    </BrowserRouter>
+    // </BrowserRouter>
 )

@@ -12,6 +12,8 @@ import Contact from './class-3/Contact';
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './class-4/ProductList';
 import ProdD from './class-4/ProdD';
+import UseReduce from './class-5/UseReduce';
+import TodoListByUseReduce from './class-5/TodoListByUseReduce';
 
 const App = () => {
   let[count,setCount] = useState(0);
@@ -28,7 +30,7 @@ const App = () => {
        </>
     <CountSplit1 a={count} b={setCount} /> */}
     {/* <TodoList a={list} b={setlist}/> */}
-     <NavBar/>
+     {/* <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}> </Route>
         <Route path='/about' element={<About/>}> </Route>
@@ -37,9 +39,11 @@ const App = () => {
         <Route path='/prodD/:id' element={<ProdD/>}> </Route>
         <Home/>
 
-      </Routes>
-    
+      </Routes> */}
+     {/* <UseReduce/> */}
+     <TodoListByUseReduce/>
     </>
+    
   )
 }
 
