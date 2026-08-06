@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 import Child from './child'
 
 const MemoDemoo = () => {
@@ -10,12 +10,17 @@ const MemoDemoo = () => {
   //   }
   //   return res
   //  },[])
+  let demo =()=>{
+    console.log("hellooooo");
+    
+  }
+  let fun = useCallback(demo,[])
   return (
     <div>
           {/* <h2> data :{data}</h2> */}
          <h1>{count}</h1>
         <button onClick={()=>(setCount(count+1))} >click</button>
-        <Child/>
+        <Child fun={fun}/>
     </div>
   )
 }
