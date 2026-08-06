@@ -14,6 +14,7 @@ import ProductList from './class-4/ProductList';
 import ProdD from './class-4/ProdD';
 import UseReduce from './class-5/UseReduce';
 import TodoListByUseReduce from './class-5/TodoListByUseReduce';
+import MemoDemoo from './class-6/MemoDemoo';
 
 const App = () => {
   let[count,setCount] = useState(0);
@@ -41,7 +42,8 @@ const App = () => {
 
       </Routes> */}
      {/* <UseReduce/> */}
-     <TodoListByUseReduce/>
+     {/* <TodoListByUseReduce/> */}
+     <MemoDemoo/>
     </>
     
   )
